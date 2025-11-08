@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DD Café | Delicious & Delightful</title>
+  <link rel="stylesheet" href="CCCC.CSS">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="logo">☕ DD Café</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <h1>Welcome to DD Café</h1>
+    <p>Fresh coffee, delicious food, and cozy vibes — all in one place!</p>
+    <button onclick="document.querySelector('#menu').scrollIntoView({behavior:'smooth'})">Explore Menu</button>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-categories">
+      <div class="category" onclick="toggleSection('coffee-section')">
+        <img src="../coffe.jpg" alt="Coffee">
+        <h3>Coffee</h3>
+      </div>
+      <div class="category" onclick="toggleSection('dessert-section')">
+        <img src="../dessertttt.jpg" alt="Desserts">
+        <h3>Desserts</h3>
+      </div>
+      <div class="category" onclick="toggleSection('meal-section')">
+        <img src="../desssseerrrtttt.jpg" alt="Meals">
+        <h3>Meals</h3>
+      </div>
+    </div>
+
+    <!-- COFFEE ITEMS -->
+    <div id="coffee-section" class="hidden menu-grid">
+      <div class="menu-item"><img src="../Cappuccino-Coffee-.jpg"><h3>Cappuccino</h3><p>₹150</p></div>
+      <div class="menu-item"><img src="../ess coffe.jpg"><h3>Espresso</h3><p>₹120</p></div>
+      <div class="menu-item"><img src="../coffe   hhh.jpg"><h3>Latte</h3><p>₹160</p></div>
+      <div class="menu-item"><img src="../cold cffe.jpg"><h3>Cold Coffee</h3><p>₹130</p></div>
+      <div class="menu-item"><img src="../coffe   hhh.jpg"><h3>Mocha</h3><p>₹170</p></div>
+      <div class="menu-item"><img src="../american.jpg"><h3>Americano</h3><p>₹140</p></div>
+    </div>
+
+    <!-- DESSERT ITEMS -->
+    <div id="dessert-section" class="hidden menu-grid">
+      <div class="menu-item"><img src="../chocho lava.webp"><h3>Chocolate Lava Cake</h3><p>₹200</p></div>
+      <div class="menu-item"><img src="../dessertttt.jpg"><h3>Cheesecake</h3><p>₹250</p></div>
+      <div class="menu-item"><img src="../browinee.jpg"><h3>Brownie with Ice Cream</h3><p>₹220</p></div>
+      <div class="menu-item"><img src="../waffels.jpg"><h3>Waffles</h3><p>₹180</p></div>
+      <div class="menu-item"><img src="../donoooo.jpg"><h3>Donuts</h3><p>₹150</p></div>
+      <div class="menu-item"><img src="../pastryy.jpg"><h3>Pastry</h3><p>₹130</p></div>
+    </div>
+
+    <!-- MEAL ITEMS -->
+    <div id="meal-section" class="hidden menu-grid">
+      <div class="menu-item"><img src="../pizza-margherita-recipe.jpg"><h3>Margherita Pizza</h3><p>₹350</p></div>
+      <div class="menu-item"><img src="../veggie-burgers-1-2.webp"><h3>Veg Burger</h3><p>₹180</p></div>
+      <div class="menu-item"><img src="../pastaaaa.jpg"><h3>Pasta Alfredo</h3><p>₹270</p></div>
+      <div class="menu-item"><img src="../GARLIC.jpg"><h3>Garlic Bread</h3><p>₹120</p></div>
+      <div class="menu-item"><img src="../Veg_Grilled_sandwich.avif"><h3>Sandwich</h3><p>₹150</p></div>
+      <div class="menu-item"><img src="../FRIES.jpg"><h3>French Fries</h3><p>₹100</p></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <h2>About DD Café</h2>
+    <p>Founded in 2020, DD Café brings together the warmth of great coffee and the joy of delicious food. We source our beans ethically and prepare every dish with love!</p>
+    <img src="../INTRRRRR.jpg" alt="Cafe Interior">
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="gallery">
+    <h2>Our Gallery</h2>
+    <div class="gallery-grid">
+      <img src="../ART.avif" alt="Coffee Art">
+      <img src="../DDDDDDDDDDDDDD.jpg" alt="Dessert">
+      <img src="../SSSSSSSSSSSSSSSSSSS.jpg" alt="Seating">
+      <img src="../MMMMMMMMMMMMMM.jpg" alt="Meal">
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>📍 DD Café, Mumbai | 📞 +91 98765 43210</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 DD Café | Made with ❤️ and Coffee</p>
+  </footer>
+
+  <script src="CCCC.JS"></script>
+</body>
+</html>
